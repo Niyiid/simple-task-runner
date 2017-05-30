@@ -1,5 +1,3 @@
-# README #
-
 # Simple Task Runner
 
 This is a dirty implementation of an asynchronous simple task runner that runs tasks concurrently up until a certain limit. I wrote it as part of my live coding session interview with @HeftyByte. Even though I didn't finish it during the live coding session, I still decided to put up the working implementation here.
@@ -12,7 +10,7 @@ Your are free to use the code or build upon it.
 Make sure you have [Node.js](http://nodejs.org/) installed.
 
 
-<h3>About:</h3>
+##About
 
 Node.js is a very cool language in that it runs everything asynchronously using a single event loop so this makes it pretty fast because of its non-blocking IO implementation.
 

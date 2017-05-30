@@ -10,7 +10,7 @@ Your are free to use the code or build upon it.
 Make sure you have [Node.js](http://nodejs.org/) installed.
 
 
-##About
+## About
 
 Node.js is a very cool language in that it runs everything asynchronously using a single event loop so this makes it pretty fast because of its non-blocking IO implementation.
 

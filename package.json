@@ -1,0 +1,25 @@
+{
+  "name": "simple-task-runner",
+  "version": "0.0.1",
+  "description": "A dirty implementation of an asynchronous task runner that runs tasks concurrently up until a certain limit",
+  "main": "task_runner_test.js",
+  "author": {
+    "name": "Odigie Oseme - osemeodigie@yahoo.com",
+    "url": "http://osemeodigie.com"
+  },
+  "scripts": {
+    "start": "node task_runner_test.js",
+    "lint": "jshint **/*.js",
+    "postmerge": "npm install",
+    "pretest": "npm run lint"
+  },
+  "dependencies": {
+    "file-save": "^0.2.0",
+    "readlines": "^0.2.0"
+  },
+  "devDependencies": {
+    "jshint": "latest",
+    "should": "^11.0.0",
+    "supertest": "^2.0.0"
+  }
+}

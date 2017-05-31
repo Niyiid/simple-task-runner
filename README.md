@@ -1,13 +1,10 @@
 # Simple Task Runner
 
+###Introduction 
+
 This is a dirty implementation of an asynchronous simple task runner that runs tasks concurrently up until a certain limit. I wrote it as part of my live coding session interview with @HeftyByte. Even though I didn't finish it during the live coding session, I still decided to put up the working implementation here.
 
 Your are free to use the code or build upon it.
-
-
-## Running Locally
-
-Make sure you have [Node.js](http://nodejs.org/) installed.
 
 
 ## About
@@ -24,3 +21,36 @@ A good way to handle this is to throttle the amount of tasks being processed at 
 - Created by Odigie Oseme U. | http://osemeodigie.com [v0.0.1]
 
 Website: http://osemeodigie.com
+
+
+## Running Locally
+
+Make sure you have [Node.js](http://nodejs.org/) installed.
+
+Clone this repo and type: 
+
+`npm install`
+
+`npm start`
+
+
+## Contributing
+
+I intend to clean this up, put type validations in place and extend its features. Please feel free to fork this repo and contribute by submitting a pull request to enhance the functionalities.
+
+
+## How can I thank you?
+
+Hi there,
+
+you can help by staring the github repo :smile: . You can also share the link for this repository on Twitter or HackerNews? I would love the attention :grin: . Help Spread the word!
+
+Don't forget to [follow my blog](http://osemeodigie.com)!
+
+Thanks!
+
+Oseme Odigie.
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.

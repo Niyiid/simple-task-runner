@@ -15,7 +15,7 @@ function TaskRunner(){
 
     // this.eventEmitter.on('done', this.completedTask)
 
-};
+}
 
 
 TaskRunner.prototype.runNextTask = function(){
@@ -24,7 +24,7 @@ TaskRunner.prototype.runNextTask = function(){
     // if found, pull the total number of offset task
     // start them...
 
-    if(this.tasks.length == 0){
+    if(this.tasks.length === 0){
         return false;
     }
 
@@ -38,7 +38,7 @@ TaskRunner.prototype.runNextTask = function(){
 
     this.current_task = this.tasks.shift();
     this.currently_running_task += 1; // taken a task to run
-    console.log("Scheduling another task to run...")
+    console.log("Scheduling another task to run...");
     this.is_task_running = true;
     this.current_task(this, this.doneTask); // completed task here..
 };
@@ -55,12 +55,12 @@ TaskRunner.prototype.doneTask = function($this, time){
         $this.runNextTask();
     }
 
-    if($this.is_task_running && $this.tasks.length == 0){
-        console.log("Finished scheduling all task to run...")
+    if($this.is_task_running && $this.tasks.length === 0){
+        console.log("Finished scheduling all task to run...");
     }
 
-    if(!$this.is_task_running && $this.currently_running_task == 0){
-        console.log("Finished running all tasks!")
+    if(!$this.is_task_running && $this.currently_running_task === 0){
+        console.log("Finished running all tasks!");
     }
 };
 
@@ -83,28 +83,28 @@ TaskRunner.prototype.addTask = function(task){
 
 // Example Task
 function task($this, done_callback) {
-    var time = Math.random() * 8000
+    var time = Math.random() * 8000;
     setTimeout(function() {
-        console.log('task complete', time)
-        done_callback($this, time)
+        console.log('task complete', time);
+        done_callback($this, time);
     }, time);
-    console.log('task started', time)
+    console.log('task started', time);
 }
 
 
 var taskRunner = new TaskRunner();
 
 //new task(taskRunner.eventEmitter)
-taskRunner.addTask(task)
-taskRunner.addTask(task)
-taskRunner.addTask(task)
-taskRunner.addTask(task)
-taskRunner.addTask(task)
-taskRunner.addTask(task)
-taskRunner.addTask(task)
-taskRunner.addTask(task)
-taskRunner.addTask(task)
-taskRunner.addTask(task)
+taskRunner.addTask(task);
+taskRunner.addTask(task);
+taskRunner.addTask(task);
+taskRunner.addTask(task);
+taskRunner.addTask(task);
+taskRunner.addTask(task);
+taskRunner.addTask(task);
+taskRunner.addTask(task);
+taskRunner.addTask(task);
+taskRunner.addTask(task);
 
 
 // task started 123.23232

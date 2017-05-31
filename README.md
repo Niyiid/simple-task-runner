@@ -2,7 +2,7 @@
 
 ### Introduction 
 
-This is a dirty implementation of an asynchronous simple task runner that runs tasks concurrently up until a certain limit. I wrote it as part of my live coding session interview with @HeftyByte. Even though I didn't finish it during the live coding session, I still decided to put up the working implementation here.
+This is a dirty implementation of an asynchronous simple task runner that runs tasks concurrently up until a certain limit. I wrote it as part of a live coding session interview. Even though I didn't finish it during the live coding session, I still decided to put up the working implementation here.
 
 Your are free to use the code or build upon it.
 

@@ -1,7 +1,7 @@
 {
-  "name": "simple-task-runner",
-  "version": "0.0.1",
-  "description": "A dirty implementation of an asynchronous task runner that runs tasks concurrently up until a certain limit",
+  "name": "some-tester-code",
+  "version": "1.2.9",
+  "description": "This is a copy dsjkhbdglfgnb asynchronous task runner that runs tasks concurrently up until a certain limit",
   "main": "task_runner_test.js",
   "author": {
     "name": "Odigie Oseme - osemeodigie@yahoo.com",
